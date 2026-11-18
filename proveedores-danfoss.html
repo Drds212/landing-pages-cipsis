@@ -225,30 +225,7 @@
     </div>
   </footer>
 
-
-    <script>
-    function abrirLightbox(btn) {
-      const img = btn.closest('.ic-card__img-wrap').querySelector('img');
-      document.getElementById('lb-img').src   = img.src;
-      document.getElementById('lb-img').alt   = img.alt;
-      document.getElementById('lb-title').textContent = btn.dataset.title;
-      document.getElementById('lb-overlay').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function cerrarLightbox() {
-      document.getElementById('lb-overlay').classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
-    function cerrarLightboxFondo(e) {
-      if (e.target === document.getElementById('lb-overlay')) cerrarLightbox();
-    }
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') cerrarLightbox();
-    });
-  </script>
+  <script defer src="js/lightbox.js"></script>
 
 </body>
 </html>

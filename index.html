@@ -344,23 +344,7 @@
   </div>
 </section>
 
-<script>
-function loadVideo(element, videoId) {
-  const iframe = document.createElement("iframe");
-  iframe.setAttribute("src", `https://www.youtube.com/embed/${videoId}?autoplay=1`);
-  iframe.setAttribute("title", "CIP SISTEM Video");
-  iframe.setAttribute("frameborder", "0");
-  iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-  iframe.setAttribute("allowfullscreen", "1");
-  
-  // Estilos para que encaje perfecto en el diseño de Liliana
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.style.borderRadius = "12px";
-  
-  element.parentNode.replaceChild(iframe, element);
-}
-</script>
+
 
   <!--Ubicacion-->
   <section id="ubicacion" class="ubicacion-section">
